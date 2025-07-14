@@ -1,0 +1,99 @@
+/* resume-style.css */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #222;
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.left-column {
+  width: 35%;
+  background-color: #0b3558;
+  color: white;
+  padding: 30px 20px;
+}
+
+.right-column {
+  width: 65%;
+  padding: 30px 40px;
+  background-color: #f4f4f4;
+}
+
+.name {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.title {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  font-size: 18px;
+  color: #f4c10f;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  line-height: 1.6;
+}
+
+.section p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #f4c10f;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.declaration {
+  margin-top: 40px;
+  font-style: italic;
+  color: #555;
+}
+
+@media screen and (max-width: 768px) {
+  .resume-container {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+  }
+
+  .left-column {
+    text-align: center;
+  }
+}
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+  display: block;
+  border: 3px solid white;
+}
